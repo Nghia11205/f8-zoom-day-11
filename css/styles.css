@@ -155,12 +155,6 @@ body{
     top: 0;
     left: 0;
 }
-.header-picture .mask{
-    position: absolute;
-    z-index: 4;
-    top: 111px;
-    right: -90px;
-}
 .header-picture .play{
     position: absolute;
     z-index: 5;
@@ -171,7 +165,7 @@ body{
 /* about */
 .about{
     background: #0E1412;
-    height: 770px;
+    min-height: 100px;
 }
 .about .pic{
     position: relative;
@@ -202,7 +196,7 @@ body{
 
 .about .text{
     margin-top: 164px;
-    height: 442px;
+    min-height: 442px;
 }
 .about .text .sub-heading{
     color: var(--primary);
@@ -255,7 +249,7 @@ body{
 }
 .practice-area .text{
     margin-top: 150px;
-    width: 470px;
+    max-width: 470px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -326,7 +320,7 @@ body{
     min-height: 100px;
 }
 .features-wrapper{
-    height: 540px;
+    min-height: 540px;
 }
 .features-wrapper .pic {
     position: relative;
@@ -344,7 +338,7 @@ body{
     top: 0;
     right: calc(var(--spacer) / 2);
     width: 20px;
-    height:220px;
+    height:65%;
     background: var(--primary);
     z-index: 1;
 }
@@ -563,6 +557,9 @@ body{
     width: 469px;
     color: var(--color-text);
 }
+.testimonial-wrapper{
+    position: relative;
+}
 .arrows{
     top: 70px;
     right: 0;
@@ -748,7 +745,7 @@ body{
 .question-other::before{
     content: "";
     position: absolute;
-    width: 770px;
+    width: 100%;
     height: 1px;
     left: 0;
     top: -30px;
@@ -778,7 +775,7 @@ body{
 }
 
 .blog .content{
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 .blog .text .sub-heading , .blog .text p {
     color: #586863;
@@ -856,6 +853,7 @@ body{
 /* CTA */
 
 .cta{
+    margin-top: 150px;
     background: #017848;
     min-height: 494px;
     text-align: center;
